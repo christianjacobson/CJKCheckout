@@ -23,5 +23,6 @@
 - (NSString*) SHA1;
 
 - (NSString*) SHA256;
+- (NSData*) SHA256Raw;
 
 @end

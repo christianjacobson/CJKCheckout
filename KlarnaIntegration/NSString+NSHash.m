@@ -44,6 +44,17 @@
 	return [self toHexString:output length:outputLength];;
 }
 
+- (NSData*) SHA256Raw {
+    unsigned char hash[CC_SHA256_DIGEST_LENGTH];
+    
+    if (CC_SHA256([self UTF8String], [self UTF8Length], hash)) {
+        NSData *sha1 = [NSData dataWithBytes:hash length:CC_SHA256_DIGEST_LENGTH];
+        return sha1;
+    }
+    
+    return nil;
+}
+
 - (unsigned int) UTF8Length {
 	return (unsigned int) [self lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 }

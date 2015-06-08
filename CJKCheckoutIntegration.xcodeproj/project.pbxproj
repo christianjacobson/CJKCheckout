@@ -7,36 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9102927D1B0B424E00358891 /* CJAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102927C1B0B424E00358891 /* CJAuthentication.m */; };
+		910292801B0B430800358891 /* CJOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102927F1B0B430800358891 /* CJOrderManager.m */; };
+		9134C2F01B0CC487001908C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9134C2EF1B0CC487001908C7 /* QuartzCore.framework */; };
+		915B9E661B244F4800FC4827 /* CJMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915B9E651B244F4800FC4827 /* CJMainView.m */; };
+		9180D9BB1B0BC69E00F0D315 /* NSDictionary+Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 9180D9BA1B0BC69E00F0D315 /* NSDictionary+Order.m */; };
+		91A27D1C1B24CB8D0014901D /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A27D1B1B24CB8D0014901D /* CJTextField.m */; };
+		91D83F861B18DEA10050B147 /* CJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83F851B18DEA10050B147 /* CJViewController.m */; };
+		91D83F901B18E7F30050B147 /* CJGoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D83F8F1B18E7F30050B147 /* CJGoButton.m */; };
 		91F26B6817A03A3800174949 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F26B6717A03A3800174949 /* UIKit.framework */; };
 		91F26B6A17A03A3800174949 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F26B6917A03A3800174949 /* Foundation.framework */; };
 		91F26B6C17A03A3800174949 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F26B6B17A03A3800174949 /* CoreGraphics.framework */; };
 		91F26B7217A03A3800174949 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B7017A03A3800174949 /* InfoPlist.strings */; };
 		91F26B7417A03A3800174949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B7317A03A3800174949 /* main.m */; };
-		91F26B7817A03A3800174949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B7717A03A3800174949 /* AppDelegate.m */; };
+		91F26B7817A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B7717A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.m */; };
 		91F26B7A17A03A3800174949 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B7917A03A3800174949 /* Default.png */; };
 		91F26B7C17A03A3800174949 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B7B17A03A3800174949 /* Default@2x.png */; };
 		91F26B7E17A03A3800174949 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B7D17A03A3800174949 /* Default-568h@2x.png */; };
-		91F26B8117A03A3800174949 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B7F17A03A3800174949 /* MainStoryboard.storyboard */; };
-		91F26B8417A03A3800174949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B8317A03A3800174949 /* ViewController.m */; };
+		91F26B8417A03A3800174949 /* CJKCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B8317A03A3800174949 /* CJKCheckoutViewController.m */; };
+		91F26B8C17A03A7100174949 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F26B8A17A03A7100174949 /* Security.framework */; };
+		91F26B8D17A03A7100174949 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F26B8B17A03A7100174949 /* SystemConfiguration.framework */; };
+		91F26BA417A03B3200174949 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9017A03B3200174949 /* AFHTTPClient.m */; };
+		91F26BA517A03B3200174949 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9217A03B3200174949 /* AFHTTPRequestOperation.m */; };
+		91F26BA617A03B3200174949 /* AFHTTPRequestOperationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9417A03B3200174949 /* AFHTTPRequestOperationLogger.m */; };
+		91F26BA717A03B3200174949 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9617A03B3200174949 /* AFImageRequestOperation.m */; };
+		91F26BA817A03B3200174949 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9817A03B3200174949 /* AFJSONRequestOperation.m */; };
+		91F26BA917A03B3200174949 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9A17A03B3200174949 /* AFNetworkActivityIndicatorManager.m */; };
+		91F26BAA17A03B3200174949 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9D17A03B3200174949 /* AFPropertyListRequestOperation.m */; };
+		91F26BAB17A03B3200174949 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26B9F17A03B3200174949 /* AFURLConnectionOperation.m */; };
+		91F26BAC17A03B3200174949 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26BA117A03B3200174949 /* AFXMLRequestOperation.m */; };
+		91F26BAD17A03B3200174949 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26BA317A03B3200174949 /* UIImageView+AFNetworking.m */; };
+		91F26BB217A0445400174949 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26BB017A03B9F00174949 /* NSData+Base64.m */; };
+		91F26BB317A0446300174949 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F26BAF17A03B9F00174949 /* NSString+NSHash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		91F26B6417A03A3800174949 /* KlarnaIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlarnaIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9102927B1B0B424E00358891 /* CJAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAuthentication.h; sourceTree = "<group>"; };
+		9102927C1B0B424E00358891 /* CJAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAuthentication.m; sourceTree = "<group>"; };
+		9102927E1B0B430800358891 /* CJOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOrderManager.h; sourceTree = "<group>"; };
+		9102927F1B0B430800358891 /* CJOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOrderManager.m; sourceTree = "<group>"; };
+		9134C2EF1B0CC487001908C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		915B9E641B244F4800FC4827 /* CJMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMainView.h; sourceTree = "<group>"; };
+		915B9E651B244F4800FC4827 /* CJMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMainView.m; sourceTree = "<group>"; };
+		9180D9B91B0BC69E00F0D315 /* NSDictionary+Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Order.h"; sourceTree = "<group>"; };
+		9180D9BA1B0BC69E00F0D315 /* NSDictionary+Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Order.m"; sourceTree = "<group>"; };
+		91A27D1A1B24CB8D0014901D /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
+		91A27D1B1B24CB8D0014901D /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
+		91D83F841B18DEA10050B147 /* CJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJViewController.h; sourceTree = "<group>"; };
+		91D83F851B18DEA10050B147 /* CJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJViewController.m; sourceTree = "<group>"; };
+		91D83F8E1B18E7F30050B147 /* CJGoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJGoButton.h; sourceTree = "<group>"; };
+		91D83F8F1B18E7F30050B147 /* CJGoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJGoButton.m; sourceTree = "<group>"; };
+		91F26B6417A03A3800174949 /* CJKCheckoutIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJKCheckoutIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F26B6717A03A3800174949 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91F26B6917A03A3800174949 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91F26B6B17A03A3800174949 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		91F26B6F17A03A3800174949 /* KlarnaIntegration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KlarnaIntegration-Info.plist"; sourceTree = "<group>"; };
+		91F26B6F17A03A3800174949 /* CJKCheckoutIntegration-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CJKCheckoutIntegration-Info.plist"; sourceTree = "<group>"; };
 		91F26B7117A03A3800174949 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91F26B7317A03A3800174949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		91F26B7517A03A3800174949 /* KlarnaIntegration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KlarnaIntegration-Prefix.pch"; sourceTree = "<group>"; };
-		91F26B7617A03A3800174949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		91F26B7717A03A3800174949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		91F26B7517A03A3800174949 /* CJKCheckoutIntegration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJKCheckoutIntegration-Prefix.pch"; sourceTree = "<group>"; };
+		91F26B7617A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJKCheckoutIntegrationAppDelegate.h; path = KlarnaIntegration/CJKCheckoutIntegrationAppDelegate.h; sourceTree = "<group>"; };
+		91F26B7717A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CJKCheckoutIntegrationAppDelegate.m; path = KlarnaIntegration/CJKCheckoutIntegrationAppDelegate.m; sourceTree = "<group>"; };
 		91F26B7917A03A3800174949 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		91F26B7B17A03A3800174949 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		91F26B7D17A03A3800174949 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		91F26B8017A03A3800174949 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		91F26B8217A03A3800174949 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		91F26B8317A03A3800174949 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		91F26B8217A03A3800174949 /* CJKCheckoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJKCheckoutViewController.h; sourceTree = "<group>"; };
+		91F26B8317A03A3800174949 /* CJKCheckoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJKCheckoutViewController.m; sourceTree = "<group>"; };
+		91F26B8A17A03A7100174949 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		91F26B8B17A03A7100174949 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		91F26B8F17A03B3200174949 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		91F26B9017A03B3200174949 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		91F26B9117A03B3200174949 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		91F26B9217A03B3200174949 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		91F26B9317A03B3200174949 /* AFHTTPRequestOperationLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationLogger.h; sourceTree = "<group>"; };
+		91F26B9417A03B3200174949 /* AFHTTPRequestOperationLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationLogger.m; sourceTree = "<group>"; };
+		91F26B9517A03B3200174949 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		91F26B9617A03B3200174949 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		91F26B9717A03B3200174949 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		91F26B9817A03B3200174949 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		91F26B9917A03B3200174949 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		91F26B9A17A03B3200174949 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		91F26B9B17A03B3200174949 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		91F26B9C17A03B3200174949 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		91F26B9D17A03B3200174949 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		91F26B9E17A03B3200174949 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		91F26B9F17A03B3200174949 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		91F26BA017A03B3200174949 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		91F26BA117A03B3200174949 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		91F26BA217A03B3200174949 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		91F26BA317A03B3200174949 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		91F26BAE17A03B9F00174949 /* NSString+NSHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+NSHash.h"; path = "KlarnaIntegration/NSString+NSHash.h"; sourceTree = "<group>"; };
+		91F26BAF17A03B9F00174949 /* NSString+NSHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+NSHash.m"; path = "KlarnaIntegration/NSString+NSHash.m"; sourceTree = "<group>"; };
+		91F26BB017A03B9F00174949 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "KlarnaIntegration/NSData+Base64.m"; sourceTree = "<group>"; };
+		91F26BB117A03B9F00174949 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "KlarnaIntegration/NSData+Base64.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9134C2F01B0CC487001908C7 /* QuartzCore.framework in Frameworks */,
+				91F26B8C17A03A7100174949 /* Security.framework in Frameworks */,
+				91F26B8D17A03A7100174949 /* SystemConfiguration.framework in Frameworks */,
 				91F26B6817A03A3800174949 /* UIKit.framework in Frameworks */,
 				91F26B6A17A03A3800174949 /* Foundation.framework in Frameworks */,
 				91F26B6C17A03A3800174949 /* CoreGraphics.framework in Frameworks */,
@@ -53,10 +118,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910292781B0B37B500358891 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				91F26BAE17A03B9F00174949 /* NSString+NSHash.h */,
+				91F26BAF17A03B9F00174949 /* NSString+NSHash.m */,
+				91F26BB017A03B9F00174949 /* NSData+Base64.m */,
+				91F26BB117A03B9F00174949 /* NSData+Base64.h */,
+				9180D9B91B0BC69E00F0D315 /* NSDictionary+Order.h */,
+				9180D9BA1B0BC69E00F0D315 /* NSDictionary+Order.m */,
+			);
+			name = Categories;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9102927A1B0B402000358891 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				91F26B7617A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.h */,
+				91F26B7717A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.m */,
+				91D83F841B18DEA10050B147 /* CJViewController.h */,
+				91D83F851B18DEA10050B147 /* CJViewController.m */,
+				91D83F8E1B18E7F30050B147 /* CJGoButton.h */,
+				91D83F8F1B18E7F30050B147 /* CJGoButton.m */,
+				915B9E641B244F4800FC4827 /* CJMainView.h */,
+				915B9E651B244F4800FC4827 /* CJMainView.m */,
+				91A27D1A1B24CB8D0014901D /* CJTextField.h */,
+				91A27D1B1B24CB8D0014901D /* CJTextField.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
 		91F26B5B17A03A3800174949 = {
 			isa = PBXGroup;
 			children = (
-				91F26B6D17A03A3800174949 /* KlarnaIntegration */,
+				9102927A1B0B402000358891 /* Demo */,
+				91F26B6E17A03A3800174949 /* Supporting Files */,
+				91F26B6D17A03A3800174949 /* Classes */,
 				91F26B6617A03A3800174949 /* Frameworks */,
 				91F26B6517A03A3800174949 /* Products */,
 			);
@@ -65,7 +163,7 @@
 		91F26B6517A03A3800174949 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91F26B6417A03A3800174949 /* KlarnaIntegration.app */,
+				91F26B6417A03A3800174949 /* CJKCheckoutIntegration.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +171,9 @@
 		91F26B6617A03A3800174949 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9134C2EF1B0CC487001908C7 /* QuartzCore.framework */,
+				91F26B8A17A03A7100174949 /* Security.framework */,
+				91F26B8B17A03A7100174949 /* SystemConfiguration.framework */,
 				91F26B6717A03A3800174949 /* UIKit.framework */,
 				91F26B6917A03A3800174949 /* Foundation.framework */,
 				91F26B6B17A03A3800174949 /* CoreGraphics.framework */,
@@ -80,39 +181,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		91F26B6D17A03A3800174949 /* KlarnaIntegration */ = {
+		91F26B6D17A03A3800174949 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				91F26B7617A03A3800174949 /* AppDelegate.h */,
-				91F26B7717A03A3800174949 /* AppDelegate.m */,
-				91F26B7F17A03A3800174949 /* MainStoryboard.storyboard */,
-				91F26B8217A03A3800174949 /* ViewController.h */,
-				91F26B8317A03A3800174949 /* ViewController.m */,
-				91F26B6E17A03A3800174949 /* Supporting Files */,
+				910292781B0B37B500358891 /* Categories */,
+				91F26B8E17A03B3200174949 /* AFNetworking */,
+				91F26B8217A03A3800174949 /* CJKCheckoutViewController.h */,
+				91F26B8317A03A3800174949 /* CJKCheckoutViewController.m */,
+				9102927B1B0B424E00358891 /* CJAuthentication.h */,
+				9102927C1B0B424E00358891 /* CJAuthentication.m */,
+				9102927E1B0B430800358891 /* CJOrderManager.h */,
+				9102927F1B0B430800358891 /* CJOrderManager.m */,
 			);
+			name = Classes;
 			path = KlarnaIntegration;
 			sourceTree = "<group>";
 		};
 		91F26B6E17A03A3800174949 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				91F26B6F17A03A3800174949 /* KlarnaIntegration-Info.plist */,
+				91F26B6F17A03A3800174949 /* CJKCheckoutIntegration-Info.plist */,
 				91F26B7017A03A3800174949 /* InfoPlist.strings */,
 				91F26B7317A03A3800174949 /* main.m */,
-				91F26B7517A03A3800174949 /* KlarnaIntegration-Prefix.pch */,
+				91F26B7517A03A3800174949 /* CJKCheckoutIntegration-Prefix.pch */,
 				91F26B7917A03A3800174949 /* Default.png */,
 				91F26B7B17A03A3800174949 /* Default@2x.png */,
 				91F26B7D17A03A3800174949 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = KlarnaIntegration;
+			sourceTree = "<group>";
+		};
+		91F26B8E17A03B3200174949 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				91F26B8F17A03B3200174949 /* AFHTTPClient.h */,
+				91F26B9017A03B3200174949 /* AFHTTPClient.m */,
+				91F26B9117A03B3200174949 /* AFHTTPRequestOperation.h */,
+				91F26B9217A03B3200174949 /* AFHTTPRequestOperation.m */,
+				91F26B9317A03B3200174949 /* AFHTTPRequestOperationLogger.h */,
+				91F26B9417A03B3200174949 /* AFHTTPRequestOperationLogger.m */,
+				91F26B9517A03B3200174949 /* AFImageRequestOperation.h */,
+				91F26B9617A03B3200174949 /* AFImageRequestOperation.m */,
+				91F26B9717A03B3200174949 /* AFJSONRequestOperation.h */,
+				91F26B9817A03B3200174949 /* AFJSONRequestOperation.m */,
+				91F26B9917A03B3200174949 /* AFNetworkActivityIndicatorManager.h */,
+				91F26B9A17A03B3200174949 /* AFNetworkActivityIndicatorManager.m */,
+				91F26B9B17A03B3200174949 /* AFNetworking.h */,
+				91F26B9C17A03B3200174949 /* AFPropertyListRequestOperation.h */,
+				91F26B9D17A03B3200174949 /* AFPropertyListRequestOperation.m */,
+				91F26B9E17A03B3200174949 /* AFURLConnectionOperation.h */,
+				91F26B9F17A03B3200174949 /* AFURLConnectionOperation.m */,
+				91F26BA017A03B3200174949 /* AFXMLRequestOperation.h */,
+				91F26BA117A03B3200174949 /* AFXMLRequestOperation.m */,
+				91F26BA217A03B3200174949 /* UIImageView+AFNetworking.h */,
+				91F26BA317A03B3200174949 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		91F26B6317A03A3800174949 /* KlarnaIntegration */ = {
+		91F26B6317A03A3800174949 /* CJKCheckoutIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91F26B8717A03A3800174949 /* Build configuration list for PBXNativeTarget "KlarnaIntegration" */;
+			buildConfigurationList = 91F26B8717A03A3800174949 /* Build configuration list for PBXNativeTarget "CJKCheckoutIntegration" */;
 			buildPhases = (
 				91F26B6017A03A3800174949 /* Sources */,
 				91F26B6117A03A3800174949 /* Frameworks */,
@@ -122,9 +255,9 @@
 			);
 			dependencies = (
 			);
-			name = KlarnaIntegration;
+			name = CJKCheckoutIntegration;
 			productName = KlarnaIntegration;
-			productReference = 91F26B6417A03A3800174949 /* KlarnaIntegration.app */;
+			productReference = 91F26B6417A03A3800174949 /* CJKCheckoutIntegration.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +269,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Christian Jacobson";
 			};
-			buildConfigurationList = 91F26B5F17A03A3800174949 /* Build configuration list for PBXProject "KlarnaIntegration" */;
+			buildConfigurationList = 91F26B5F17A03A3800174949 /* Build configuration list for PBXProject "CJKCheckoutIntegration" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +281,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				91F26B6317A03A3800174949 /* KlarnaIntegration */,
+				91F26B6317A03A3800174949 /* CJKCheckoutIntegration */,
 			);
 		};
 /* End PBXProject section */
@@ -162,7 +295,6 @@
 				91F26B7A17A03A3800174949 /* Default.png in Resources */,
 				91F26B7C17A03A3800174949 /* Default@2x.png in Resources */,
 				91F26B7E17A03A3800174949 /* Default-568h@2x.png in Resources */,
-				91F26B8117A03A3800174949 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +306,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F26B7417A03A3800174949 /* main.m in Sources */,
-				91F26B7817A03A3800174949 /* AppDelegate.m in Sources */,
-				91F26B8417A03A3800174949 /* ViewController.m in Sources */,
+				91F26B7817A03A3800174949 /* CJKCheckoutIntegrationAppDelegate.m in Sources */,
+				91F26B8417A03A3800174949 /* CJKCheckoutViewController.m in Sources */,
+				9180D9BB1B0BC69E00F0D315 /* NSDictionary+Order.m in Sources */,
+				91F26BA417A03B3200174949 /* AFHTTPClient.m in Sources */,
+				91D83F861B18DEA10050B147 /* CJViewController.m in Sources */,
+				915B9E661B244F4800FC4827 /* CJMainView.m in Sources */,
+				91F26BA517A03B3200174949 /* AFHTTPRequestOperation.m in Sources */,
+				91F26BA617A03B3200174949 /* AFHTTPRequestOperationLogger.m in Sources */,
+				91F26BA717A03B3200174949 /* AFImageRequestOperation.m in Sources */,
+				91D83F901B18E7F30050B147 /* CJGoButton.m in Sources */,
+				91F26BA817A03B3200174949 /* AFJSONRequestOperation.m in Sources */,
+				91F26BA917A03B3200174949 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				91F26BAA17A03B3200174949 /* AFPropertyListRequestOperation.m in Sources */,
+				9102927D1B0B424E00358891 /* CJAuthentication.m in Sources */,
+				91F26BAB17A03B3200174949 /* AFURLConnectionOperation.m in Sources */,
+				91F26BAC17A03B3200174949 /* AFXMLRequestOperation.m in Sources */,
+				91F26BAD17A03B3200174949 /* UIImageView+AFNetworking.m in Sources */,
+				91F26BB217A0445400174949 /* NSData+Base64.m in Sources */,
+				910292801B0B430800358891 /* CJOrderManager.m in Sources */,
+				91A27D1C1B24CB8D0014901D /* CJTextField.m in Sources */,
+				91F26BB317A0446300174949 /* NSString+NSHash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +339,6 @@
 				91F26B7117A03A3800174949 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		91F26B7F17A03A3800174949 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91F26B8017A03A3800174949 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,9 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KlarnaIntegration/KlarnaIntegration-Prefix.pch";
-				INFOPLIST_FILE = "KlarnaIntegration/KlarnaIntegration-Info.plist";
+				GCC_PREFIX_HEADER = "KlarnaIntegration/CJKCheckoutIntegration-Prefix.pch";
+				INFOPLIST_FILE = "KlarnaIntegration/CJKCheckoutIntegration-Info.plist";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,9 +419,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KlarnaIntegration/KlarnaIntegration-Prefix.pch";
-				INFOPLIST_FILE = "KlarnaIntegration/KlarnaIntegration-Info.plist";
+				GCC_PREFIX_HEADER = "KlarnaIntegration/CJKCheckoutIntegration-Prefix.pch";
+				INFOPLIST_FILE = "KlarnaIntegration/CJKCheckoutIntegration-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		91F26B5F17A03A3800174949 /* Build configuration list for PBXProject "KlarnaIntegration" */ = {
+		91F26B5F17A03A3800174949 /* Build configuration list for PBXProject "CJKCheckoutIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91F26B8517A03A3800174949 /* Debug */,
@@ -291,13 +440,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91F26B8717A03A3800174949 /* Build configuration list for PBXNativeTarget "KlarnaIntegration" */ = {
+		91F26B8717A03A3800174949 /* Build configuration list for PBXNativeTarget "CJKCheckoutIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91F26B8817A03A3800174949 /* Debug */,
 				91F26B8917A03A3800174949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,18 +1,31 @@
 //
-//  AppDelegate.m
-//  KlarnaIntegration
+//  CJKCheckoutIntegrationAppDelegate.h
+//  CJKCheckoutIntegration
 //
 //  Created by Christian Jacobson on 2013-07-24.
-//  Copyright (c) 2013 Christian Jacobson. All rights reserved.
+//  Copyright (c) 2015 Christian Jacobson. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CJKCheckoutIntegrationAppDelegate.h"
+#import "CJKCheckoutViewController.h"
+#import "AFNetworking.h"
+#import "NSDictionary+Order.h"
+#import "CJViewController.h"
 
-@implementation AppDelegate
+@implementation CJKCheckoutIntegrationAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CJViewController *demoViewController = [CJViewController new];
+    
+    [self.window setRootViewController:demoViewController];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
