@@ -21,7 +21,7 @@ NSString *const kLayout = @"layout";
 NSString *const kLayoutValue = @"mobile";
 NSString *const kMerchant = @"merchant";
 NSString *const kId = @"id";
-NSString *const kIdValue = @"544";
+NSString *const kIdValue = @"0";
 NSString *const kTermsUri = @"terms_uri";
 NSString *const kTermsUriValue = @"http://www.yourdomain.se";
 NSString *const kCheckoutUri = @"checkout_uri";
@@ -43,6 +43,7 @@ NSString *const kUnitPrice = @"unit_price";
 NSString *const kDiscountRate = @"discount_rate";
 NSString *const kTaxRate = @"tax_rate";
 static int kTaxRateValue = 2500;
+
 
 + (NSDictionary *)newOrder:(NSString *)name andQuantity:(NSNumber *)quantity andReference:(NSString *)reference andPrice:(NSNumber *)price {
     NSDictionary *order = @{kName:name,kQuantity:quantity,kReference:reference,kUnitPrice:[NSNumber numberWithInt:[price intValue] *100]};
