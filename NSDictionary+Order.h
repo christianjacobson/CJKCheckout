@@ -14,6 +14,7 @@ extern NSString *const kReference;
 extern NSString *const kName;
 extern NSString *const kQuantity;
 extern NSString *const kUnitPrice;
+extern NSString *const kKey;
 
 + (NSDictionary *)newOrder:(NSString *)name andQuantity:(NSNumber *)quantity andReference:(NSString *)reference andPrice:(NSNumber *)price;
 

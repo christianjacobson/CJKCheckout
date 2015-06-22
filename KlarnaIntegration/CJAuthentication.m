@@ -10,13 +10,12 @@
 #import <CommonCrypto/CommonHMAC.h>
 #import "NSData+Base64.h"
 #import "NSString+NSHash.h"
+#import "NSDictionary+Order.h"
 
 @implementation CJAuthentication
 
 + (NSString*)signRequest:(NSString*)payload {
-    NSString *key = @"rtpukRTiiIuGTAx";
-    
-    NSString *hashString = [NSString stringWithFormat:@"%@%@",payload,key];
+    NSString *hashString = [NSString stringWithFormat:@"%@%@",payload,kKey];
     NSData *hashed = [hashString SHA256Raw];
     NSString *signature = [hashed base64EncodedString];
     

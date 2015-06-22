@@ -18,7 +18,7 @@
 @property (nonatomic, strong) CJTextField *quantityTextField;
 @property (nonatomic, strong) CJTextField *referenceTextField;
 @property (nonatomic, strong) CJTextField *priceTextField;
-@property (nonatomic, strong) NSDictionary *views;
+@property (nonatomic, copy) NSDictionary *views;
 
 - (void)addConstrainsToView;
 - (void)initViews;

@@ -84,7 +84,9 @@
     self.view.frame = parentViewController.view.bounds;
     [parentViewController.view addSubview:self.view];
     [parentViewController addChildViewController:self];
+    
     CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    
     bounceAnimation.duration = 0.4;
     bounceAnimation.delegate = self;
     bounceAnimation.values = @[ @0.6, @1.4, @0.85, @1.0 ];
@@ -96,6 +98,7 @@
                                          functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
                                         [CAMediaTimingFunction
                                          functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    
     [self.view.layer addAnimation:bounceAnimation forKey:@"bounceAnimation"];
     
     [self didMoveToParentViewController:parentViewController];

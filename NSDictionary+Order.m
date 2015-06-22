@@ -42,6 +42,7 @@ NSString *const kQuantity = @"quantity";
 NSString *const kUnitPrice = @"unit_price";
 NSString *const kDiscountRate = @"discount_rate";
 NSString *const kTaxRate = @"tax_rate";
+NSString *const kKey = @"rtpukRTiiIuGTAx";
 static int kTaxRateValue = 2500;
 
 

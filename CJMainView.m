@@ -47,6 +47,11 @@ NSString * const kMerchantId = @"Merchant ID";
     CGGradientRelease(gradient);
 }
 
+- (void)dealloc;
+{
+    NSLog(@"I %@ deallocked",self);
+}
+
 - (void)initViews;
 {
     [self setBackgroundColor:[UIColor grayColor]];
@@ -72,15 +77,14 @@ NSString * const kMerchantId = @"Merchant ID";
 
 - (void)addConstrainsToView;
 {
-    [self layoutIfNeeded];
     
     NSDictionary *views = NSDictionaryOfVariableBindings(_priceTextField, _productTextField, _referenceTextField, _quantityTextField, _goButton);
     
     NSArray *viewNames = [views allKeys];
     
-    NSString *horizontalFormat = [NSString stringWithFormat:@"V:|->=150-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]->=150-|", viewNames[0], kTextFieldHeight, viewNames[1], kTextFieldHeight, viewNames[2], kTextFieldHeight, viewNames[3], kTextFieldHeight, viewNames[4], kTextFieldHeight];
+    NSString *verticalConstraintFormat = [NSString stringWithFormat:@"V:|->=150-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]-10-[%@(%f)]->=150-|", viewNames[0], kTextFieldHeight, viewNames[1], kTextFieldHeight, viewNames[2], kTextFieldHeight, viewNames[3], kTextFieldHeight, viewNames[4], kTextFieldHeight];
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:horizontalFormat options:0 metrics:nil views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:verticalConstraintFormat options:0 metrics:nil views:views]];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.priceTextField attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
     
@@ -110,7 +114,7 @@ NSString * const kMerchantId = @"Merchant ID";
                         options:0
                      animations:^{
                          [self layoutIfNeeded];
-                     } completion:NULL];
+                     } completion:nil];
 }
 
 @end
